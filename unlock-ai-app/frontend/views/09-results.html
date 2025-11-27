@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pantalla 9 - Resultados</title>
-  <link rel="stylesheet" href="../assets/styles/bootstrap.min.css" />
-  <link rel="stylesheet" href="../assets/styles/results.css" />
-   <link href="../assets/styles/footer.css" rel="stylesheet">
+  <link href="../assets/styles/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/styles/shared.css" rel="stylesheet">
+  <link href="../assets/styles/results.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="bg-white">
 
   <!-- Marca en la esquina superior derecha -->
   <header class="d-flex justify-content-end p-3">
@@ -16,15 +18,15 @@
   </header>
   <main class="results-main text-center">
 
-    <!-- Robot éxito -->
-    <div class="robot-space">
+    <!-- Robot -->
+    <div class="robot-space robot-small d-flex align-items-center justify-content-center">
       <img src="../assets/gif/Robot base 5 check.gif" alt="Robot IA" class="robot-img" />
     </div>
 
     <!-- Burbuja -->
     <div class="chat-container">
-      <div class="chat-bubble">
-        La información ha sido extraída exitosamente,<br />
+      <div class="chat-bubble chat-compact">
+        La información ha sido extraída exitosamente,<br>
         puedes revisar el resultado escaneando el siguiente QR
       </div>
     </div>
@@ -37,16 +39,15 @@
     <!-- Tabla de resultados -->
     <div class="table-container shadow-sm">
       <div class="table-wrap">
-        <table id="resultsTable" class="table table-striped table-hover table-bordered align-middle">
+        <table id="resultsTable" class="table table-bordered table-striped">
           <!-- Se llena por JS -->
         </table>
       </div>
     </div>
 
-    <!-- CTA -->
-    <button class="btn btn-next" onclick="location.href='./10-learnmore.html'">
-      Siguiente <span class="arrow">→</span>
-    </button>
+<!-- Botón -->
+    <button class="btn btn-start" onclick="location.href='./10-learnmore.html'">Siguiente <span
+        class="arrow">→</span></button>
 
   </main>
 
@@ -66,4 +67,5 @@
   <script src="../assets/scripts/bootstrap.bundle.min.js"></script>
   <script src="../assets/scripts/results.js"></script>
 </body>
+
 </html>

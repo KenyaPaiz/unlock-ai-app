@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pantalla 3 - Agente IA</title>
   <link href="../assets/styles/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/styles/shared.css" rel="stylesheet">
   <link href="../assets/styles/agents.css" rel="stylesheet">
 
-   <link href="../assets/styles/footer.css" rel="stylesheet">
+  <link href="../assets/styles/footer.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="bg-white">
 
   <!-- Marca en esquina superior derecha -->
   <header class="d-flex justify-content-end p-3">
@@ -35,7 +38,7 @@
     </div>
 
     <!-- Botón Probar IA -->
-    <button class="btn btn-primary btn-test" onclick="location.href='./04-area.html'">PROBAR IA</button>
+    <button class="btn btn-start" onclick="location.href='./04-area.html'">PROBAR IA</button>
 
     <!-- Texto secundario -->
     <p class="mt-3 small-text">
@@ -47,15 +50,13 @@
   <!-- Footer -->
   <footer class="agent-footer">
     <div class="footer-overlay">
-        <a href="./02-welcome.html">
-            <img 
-                src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1759286999/samples/unlockIA/unlock-icon-white_g2zgx4.png" 
-                alt="Unlock AI by Kodigo" 
-                class="footer-logo"
-            >
-        </a>
+      <a href="./02-welcome.html">
+        <img src="../assets/images/unlock-icon-black.png" alt="Unlock AI by Kodigo" class="footer-logo">
+      </a>
     </div>
   </footer>
-  <script src="../assets/scripts/bootstrap.bundle.min.js"></script>
+
+  <script src="../scripts/bootstrap.bundle.js"></script>
 </body>
+
 </html>

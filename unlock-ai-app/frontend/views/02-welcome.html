@@ -1,17 +1,19 @@
-<!-- welcome.html -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome - Unlock AI</title>
   <link href="../assets/styles/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/styles/shared.css" rel="stylesheet">
   <link href="../assets/styles/welcome.css" rel="stylesheet">
 </head>
-<body>
 
-  <!-- Marca en la esquina superior derecha -->
-  <header class="d-flex justify-content-end p-3">
+<body class="bg-gradient">
+
+  <!-- Marca en la esquina superior izquierda -->
+  <header class="welcome-header d-flex justify-content-end p-3">
     <a class="site-brand" href="https://kodigo.org/ai-for-business/cohort/">AI.kodigo.org</a>
   </header>
 
@@ -22,7 +24,7 @@
     <img src="../assets/images/unlock-icon-white.png" alt="Unlock AI" class="main-icon mb-4">
 
     <!-- Carrusel de cards -->
-    <div id="coursesCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="10000">
+    <div id="coursesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="course-card">
@@ -79,7 +81,7 @@
     </div>
 
     <!-- Slide button -->
-    <div class="slide-btn-container mt-5">
+    <div class="slide-btn-container">
       <div id="slideButton" class="slide-btn">
         <span class="slide-text">Slide to unlock</span>
         <span class="slide-handle">→</span>
@@ -89,11 +91,12 @@
   </main>
 
   <!-- Footer -->
-  <footer class="text-center mt-4 mb-2">
+  <footer class="text-center">
     <img src="../assets/images/kodigo-logo.png" alt="Kodigo" class="footer-logo">
   </footer>
 
-  <script src="../assets/scripts/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/bootstrap.bundle.js"></script>
   <script src="../scripts/welcome.js"></script>
 </body>
+
 </html>

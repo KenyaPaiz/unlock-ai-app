@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pantalla 5 - Selección de Documento</title>
   <link href="../assets/styles/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/styles/area.css" rel="stylesheet">
-   <link href="../assets/styles/footer.css" rel="stylesheet">
+  <link href="../assets/styles/shared.css" rel="stylesheet">
+  <link href="../assets/styles/documents.css" rel="stylesheet">
 </head>
-<body>
+
+<body class="bg-white">
 
   <!-- Marca en la esquina superior derecha -->
   <header class="d-flex justify-content-end p-3">
@@ -62,26 +64,22 @@
     </div>
 
     <!-- Botón siguiente -->
-    <button class="btn btn-next" onclick="location.href='./06-process.html'">
+    <button class="btn btn-start" onclick="location.href='./06-process.html'">
       Siguiente <span class="arrow">→</span>
     </button>
   </main>
 
   <!-- Footer -->
-  <footer class="agent-footer">
-    <div class="footer-overlay">
-        <a href="./02-welcome.html">
-            <img 
-                src="https://res.cloudinary.com/dmddi5ncx/image/upload/v1759286999/samples/unlockIA/unlock-icon-white_g2zgx4.png" 
-                alt="Unlock AI by Kodigo" 
-                class="footer-logo"
-            >
+  <footer class="text-center footer agent-footer">
+      <a href="./02-welcome.html">
+          <img src="../assets/images/unlock-icon-black.png" 
+               alt="Unlock AI by Kodigo" 
+               class="footer-logo"
+          >
         </a>
-    </div>
-  </footer>
-  <script src="../assets/scripts/bootstrap.bundle.min.js"></script>
+    </footer>
 
-  <!-- Script selección de documento -->
+    <script src="../scripts/bootstrap.bundle.js"></script>
   <script>
     document.querySelectorAll('.area-item').forEach(item => {
       item.addEventListener('click', () => {
@@ -98,17 +96,18 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ docId })
         })
-        .then(response => response.json())
-        .then(data => {
-          console.log('documento seleccionado:', docId);
-          console.log('Respuesta Backend:', data);
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-        });
+          .then(response => response.json())
+          .then(data => {
+            console.log('documento seleccionado:', docId);
+            console.log('Respuesta Backend:', data);
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
       });
     });
   </script>
 
 </body>
+
 </html>
